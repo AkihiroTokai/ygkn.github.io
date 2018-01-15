@@ -144,10 +144,12 @@ body {
 }
 .section__inner {
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
   opacity: 0;
   transition: 1s 1.2s opacity;
+  padding: 1em;
+  box-sizing: border-box;
 }
 .section__title {
   font-weight: normal;
@@ -240,6 +242,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .contact__link {
   color: #f5f5f5;
