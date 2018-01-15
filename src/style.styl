@@ -44,22 +44,25 @@ body
           transition-delay: .7s
         &#g-anim1
           transition-duration: 1s
+          transition-delay: .2s
         &#g-anim2
           transition-duration: 1s
-          transition-delay: 1s
+          transition-delay: 1.3s
         &#k-anim1
           transition-duration: 1s
+          transition-delay: .4s
         &#k-anim2
           transition-duration: .7s
-          transition-delay: .7s
+          transition-delay: 1.1s
         &#k-anim3
           transition-duration: .7s
-          transition-delay: 1.3s
+          transition-delay: 1.7s
         &#n-anim1
           transition-duration: 1s
+          transition-delay: .6s
         &#n-anim2
           transition-duration: 1s
-          transition-delay: 1.1s
+          transition-delay: 1.6s
 
 .navi
   width: 100%
@@ -79,7 +82,7 @@ body
     align-items: center
     box-sizing: border-box
     &__item
-      animation: .7s 2.5s expandY both
+      animation: .5s 2.1s expandY both
       padding: .5em 1.5em
       border-right: solid 1px
       &:first-child
@@ -111,7 +114,7 @@ body
   color: whitesmoke
   box-sizing: border-box
   position: relative
-  transition: 1s linear transform
+  transition: 1s cubic-bezier(0.4, 0, 1, 1) transform
   &:before
   &:after
     border-style: solid
