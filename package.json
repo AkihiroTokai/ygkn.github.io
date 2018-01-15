@@ -8,8 +8,9 @@
   "private": true,
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+    "build:js": "webpack",
+    "build:css": "stylus src/style.styl --out build/style.css",
+    "build": "npm run build:js && npm run build:css"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
