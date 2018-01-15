@@ -8,15 +8,19 @@ const sections = [...document.querySelectorAll(".section")].map(element => ({
 const navi = document.querySelector(".navi");
 const naviTop = navi.offsetTop;
 
-window.addEventListener("scroll", () => {
-  const { pageYOffset: winPageYOffset, innerHeight: winInnerHeight } = window;
-  const scroll = winPageYOffset + winInnerHeight - 2;
-  sections.forEach(
-    ({ element, top }) =>
-      scroll >= top && element.classList.add("section--show")
-  );
-  navi.classList[winPageYOffset > naviTop ? "add" : "remove"]("navi--fixed");
-});
+window.addEventListener(
+  "scroll",
+  () => {
+    const { pageYOffset: winPageYOffset, innerHeight: winInnerHeight } = window;
+    const scroll = winPageYOffset + winInnerHeight - 2;
+    sections.forEach(
+      ({ element, top }) =>
+        scroll >= top && element.classList.add("section--show")
+    );
+    navi.classList[winPageYOffset > naviTop ? "add" : "remove"]("navi--fixed");
+  },
+  { passive: true }
+);
 
 new SweetScroll({ updateURL: true });
 
