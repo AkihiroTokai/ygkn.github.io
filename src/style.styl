@@ -130,10 +130,12 @@ body
     transform: translateY(100%)
   &__inner
     width: 100%
-    max-width: 700px
+    max-width: 750px
     margin: auto
     opacity: 0
     transition: 1s 1.2s opacity
+    padding: 1em
+    box-sizing: border-box
   &__title
     font-weight: normal
     font-size: 2em;
@@ -186,6 +188,7 @@ for angle, i in angles
     list-style: none
     display: flex
     justify-content: space-evenly
+    flex-wrap: wrap
   &__link
       color: whitesmoke
       display: flex
