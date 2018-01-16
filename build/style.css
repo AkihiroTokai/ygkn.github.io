@@ -1,3 +1,11 @@
+a {
+  color: #40e0d0;
+  transition: 0.2s;
+}
+a:hover,
+a:active {
+  color: #fa8072;
+}
 body {
   margin: 0;
   overflow-x: hidden;
