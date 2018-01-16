@@ -121,6 +121,9 @@ body {
   border-radius: 2px;
   transition: 0.3s;
 }
+.navi__link:hover {
+  color: #000;
+}
 .navi__link:hover:before {
   transform: scaleX(1);
 }
