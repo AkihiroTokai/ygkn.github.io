@@ -1,3 +1,3 @@
 # ygkn.github.io
 
-site of ygkn
+puipui of ygkn
